@@ -12,6 +12,11 @@ European Power Platform Conference 2026 | Workshop
 
 🎟️ **SOLD OUT** [Get a ticket](https://espc.tech/conference/eppc-2026/tickets/)!
 
+## Azure sandbox
+
+The below invite code is redeemable at https://aka.ms/JoinEduLab 
+UBHMYD
+
 ## Workshop prerequisites
 
 > [!CAUTION]

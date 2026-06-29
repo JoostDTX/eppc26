@@ -1,0 +1,79 @@
+{
+  "name": "incident_assessment",
+  "strict": true,
+  "schema": {
+    "type": "object",
+    "properties": {
+      "classification": {
+        "type": "string",
+        "enum": [
+          "Infrastructure",
+          "Application",
+          "Security",
+          "Data",
+          "User Error",
+          "Unknown"
+        ],
+        "description": "The primary incident type based on the Contoso classification taxonomy"
+      },
+      "severity": {
+        "type": "string",
+        "enum": [
+          "Critical",
+          "High",
+          "Medium",
+          "Low"
+        ],
+        "description": "Current or potential business impact level"
+      },
+      "urgency": {
+        "type": "string",
+        "enum": [
+          "Immediate",
+          "Within 2 hours",
+          "Within 8 hours",
+          "Next business day"
+        ],
+        "description": "How quickly the incident must be addressed"
+      },
+      "business_impact": {
+        "type": "string",
+        "description": "One sentence describing who and what is affected in business terms"
+      },
+      "risk_score": {
+        "type": "integer",
+        "minimum": 1,
+        "maximum": 10,
+        "description": "Numeric risk score from 1 (lowest) to 10 (highest)"
+      },
+      "escalation_path": {
+        "type": "string",
+        "description": "The team or role who should own this incident, from the playbook escalation paths"
+      },
+      "missing_information": {
+        "type": ["string", "null"],
+        "description": "Comma-separated list of specific missing details, or null if the report is complete"
+      },
+      "recommended_action": {
+        "type": "string",
+        "description": "One specific, concrete, immediately executable action for the responder"
+      },
+      "management_summary": {
+        "type": "string",
+        "description": "2-3 sentences in plain non-technical language: what is happening, who is affected, what is being done"
+      }
+    },
+    "required": [
+      "classification",
+      "severity",
+      "urgency",
+      "business_impact",
+      "risk_score",
+      "escalation_path",
+      "missing_information",
+      "recommended_action",
+      "management_summary"
+    ],
+    "additionalProperties": false
+  }
+}
