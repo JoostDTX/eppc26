@@ -1,0 +1,58 @@
+{
+  "type": "AdaptiveCard",
+  "version": "1.5",
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "body": [
+    {
+      "type": "Container",
+      "style": "emphasis",
+      "items": [
+        {
+          "type": "TextBlock",
+          "text": "🚨 INCIDENT ASSESSMENT",
+          "weight": "Bolder",
+          "size": "Medium",
+          "color": "Attention"
+        },
+        {
+          "type": "TextBlock",
+          "text": "Contoso Incident Coordinator · Automated triage",
+          "size": "Small",
+          "isSubtle": true,
+          "spacing": "None"
+        }
+      ]
+    },
+    {
+      "type": "FactSet",
+      "spacing": "Medium",
+      "facts": [
+        {
+          "title": "Classification",
+          "value": "REPLACE_WITH_CLASSIFICATION"
+        },
+        {
+          "title": "Severity",
+          "value": "REPLACE_WITH_SEVERITY"
+        },
+        {
+          "title": "Escalation",
+          "value": "REPLACE_WITH_ESCALATION_PATH"
+        }
+      ]
+    },
+    {
+      "type": "TextBlock",
+      "text": "Management Summary",
+      "weight": "Bolder",
+      "size": "Small",
+      "spacing": "Medium"
+    },
+    {
+      "type": "TextBlock",
+      "text": "REPLACE_WITH_MANAGEMENT_SUMMARY",
+      "wrap": true,
+      "size": "Small"
+    }
+  ]
+}
